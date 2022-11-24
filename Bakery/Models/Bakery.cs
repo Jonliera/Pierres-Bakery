@@ -6,7 +6,7 @@ namespace Bakery.Models
   public class Bread
   {
    public int BreadAmount { get; set;}
-   public Bread (int BreadAmount)
+   public Bread (int breadAmount)
    {
     BreadAmount = BreadAmount;
    }

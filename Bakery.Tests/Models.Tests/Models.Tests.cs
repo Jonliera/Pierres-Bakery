@@ -8,9 +8,9 @@ namespace Bakery.Tests
   public class BreadTests
   {
   [TestMethod]
-    public void BreadConstructor_CreatesInstanceofBread_Bread()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread();
+      Bread newBread = new Bread(3);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     } 
   }

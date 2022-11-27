@@ -25,11 +25,28 @@ namespace Bakery.Models
   return breadCost;
   }
   }
-}
+  public class Pastry
+   {
+  public int PastryAmount { get; set;}
+  public Pastry (int pastryAmount)
+   {
+     PastryAmount = pastryAmount;
+   }
+  // public int BreadCost()
+  // {
+  // int breadCost = 0;
+  // int breadTotal = BreadAmount;
+  // if (breadTotal >= 3)
+  // {
+  // breadCost = (breadTotal * 5) - ((breadTotal / 3) *5 );
+  // }
+  // else
+  // {
+  // breadCost = breadTotal * 5;
+  // }
+  // return breadCost;
+  // }
+   }
+  }
 
    
-  // public int BreadCost ()
-  //       {
-  // //   
-  // //   
-  // }

@@ -26,6 +26,7 @@ namespace Bakery.Models
       Console.WriteLine("--------------------------------");
       int total = buyBread.BreadCost() + buyPastry.PastryCost();
       Console.WriteLine("Your Total is :$" + total);
+      Console.WriteLine("--------------------------------");
       Console.WriteLine("Thank you for your ourder");
     }
   }

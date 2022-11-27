@@ -48,5 +48,14 @@ namespace Bakery.Tests
     int result = newPastry.PastryAmount;
     Assert.AreEqual(numberPastry, result);
   }
+  [TestMethod]
+  public void PastryCost_ReturnCostOrder_int()
+  {
+    int totalCost = 2;
+    int numberPastry = 1;
+    Pastry newPastry = new Pastry(numberPastry);
+    int result = newPastry.PastryCost();
+    Assert.AreEqual(totalCost, result);
+  } 
   }
 } 

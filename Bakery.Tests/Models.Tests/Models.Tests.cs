@@ -16,11 +16,19 @@ namespace Bakery.Tests
   [TestMethod]
   public void GetAmount_ReturnAmount_Int()
   {
-    int BreadAmount = 5;
-    Bread newBread = new Bread(BreadAmount);
+    int numberBread = 5;
+    Bread newBread = new Bread(numberBread);
     int result = newBread.BreadAmount;
-    Assert.AreEqual(BreadAmount, result);
+    Assert.AreEqual(numberBread, result);
   }
-  
+  [TestMethod]
+  public void BreadCost_ReturnCostOrder_int()
+  {
+    int totalCost = 5;
+    int numberBread = 1;
+    Bread newBread = new Bread(numberBread);
+    int result = newBread.BreadCost();
+    Assert.AreEqual(totalCost, result);
+  } 
   }
-}
+} 

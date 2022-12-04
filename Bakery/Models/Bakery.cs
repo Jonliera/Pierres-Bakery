@@ -32,22 +32,14 @@ namespace Bakery.Models
    {
      PastryAmount = pastryAmount;
    }
-  public int PastryCost()
+  public int PastryTotalCost()
   {
-  int pastryCost = 0;
-  int pastryTotal = PastryAmount;
-  int remainder =  pastryTotal % 3;
-  if (pastryTotal > 2 )
-  {
-  pastryCost = (((pastryTotal - remainder) / 3 * 5 ) * 2);
-  }
-  else
-  {
-  pastryCost = pastryTotal * 2;
-  }
-  return pastryCost;
-  }
-  }
-  }
-
-   
+  int pastryCost = 2;
+  int discountCost = pastryCost / 2;
+  int discount = PastryAmount / 3 * discountCost;
+  return PastryAmount * pastryCost - discount;
+    }
+}
+}
+  
+  

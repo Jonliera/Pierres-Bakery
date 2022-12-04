@@ -22,9 +22,9 @@ namespace Bakery.Models
       Console.WriteLine("How many pieces of pastries would you like to order( Enter Amount)?");
       int pastryAmount = int.Parse(Console.ReadLine());
       Pastry buyPastry = new Pastry(pastryAmount);
-      Console.WriteLine("Your Pastry total comes to $" + buyPastry.PastryCost());
+      Console.WriteLine("Your Pastry total comes to $" + buyPastry.PastryTotalCost());
       Console.WriteLine("--------------------------------");
-      int total = buyBread.BreadCost() + buyPastry.PastryCost();
+      int total = buyBread.BreadCost() + buyPastry.PastryTotalCost();
       Console.WriteLine("Your Total is :$" + total);
       Console.WriteLine("--------------------------------");
       Console.WriteLine("Thank you for your ourder");
